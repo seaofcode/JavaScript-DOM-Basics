@@ -23,3 +23,8 @@ document.getElementById('btn').style.backgroundColor = 'blue';
 
 const headings = document.getElementsByTagName('h2');
 console.log(headings.length);
+
+### getElementsByClassName
+
+const list = document.getElementsByClassName('special');
+console.log(list);
