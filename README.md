@@ -1,7 +1,7 @@
 # JavaScript-DOM-Basics
 
-Select the element or group of elements
-Decide the effect we want to apply to selection
+// Select the element or group of elements
+// Decide the effect we want to apply to selection
 
 document.body.style.backgroundColor = 'blue';
 document.getElementById('btn').style.color = 'red';
