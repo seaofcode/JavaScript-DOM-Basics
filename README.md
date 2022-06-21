@@ -64,3 +64,9 @@ console.log(heading.parentElement);
 const first = document.querySelector('.first');\
 const second = first.nextSibling.nextSibling;\
 console.log(second);
+
+// previousElementSibling\
+//nextElementSibling
+
+const first = document.querySelector('.first');\
+first.nextElementSibling.style.color = 'red';
