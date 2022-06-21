@@ -18,3 +18,8 @@ const h1 = document.getElementById('title');
 h1.style.color = 'red';
 
 document.getElementById('btn').style.backgroundColor = 'blue';
+
+### getElementByTagName
+
+const headings = document.getElementsByTagName('h2');
+console.log(headings.length);
