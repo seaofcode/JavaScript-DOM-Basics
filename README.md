@@ -1,5 +1,7 @@
 # JavaScript-DOM-Basics
 
+### Selectors
+
 // Select the element or group of elements\
 // Decide the effect we want to apply to selection
 
@@ -29,7 +31,7 @@ console.log(headings.length);
 const list = document.getElementsByClassName('special');\
 console.log(list);
 
-### querySelector('any css'); - selects single\
+### querySelector('any css'); - selects single
 
 ### querySelector('any css'); - selects all
 
@@ -38,3 +40,27 @@ result.style.backgroundColor = 'blue';
 
 const list = document.querySelectorAll('.special');\
 console.log(list);
+
+### Traverse the DOM Tree
+
+// childNodes\
+// children, firstChild, lastChild
+
+const result = document.querySelector('#result');\
+const children = result.children;\
+console.log(children);\
+console.log(result.firstChild);\
+console.log(result.lastChild);
+
+// parent Element
+
+const heading = document.querySelector('h2');\
+console.log(heading.parentElement);
+
+// previousSibling\
+// nextSibling\
+// return whitespace
+
+const first = document.querySelector('.first');\
+const second = first.nextSibling.nextSibling;\
+console.log(second);
