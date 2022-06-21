@@ -11,3 +11,10 @@ const element = document.getElementById('element');
 
 // do something
 document.querySelector('element');
+
+### getElementById
+
+const h1 = document.getElementById('title');
+h1.style.color = 'red';
+
+document.getElementById('btn').style.backgroundColor = 'blue';
