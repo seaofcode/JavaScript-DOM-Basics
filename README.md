@@ -28,3 +28,13 @@ console.log(headings.length);
 
 const list = document.getElementsByClassName('special');\
 console.log(list);
+
+### querySelector('any css'); - selects single\
+
+### querySelector('any css'); - selects all
+
+const result = document.querySelector('#result');\
+result.style.backgroundColor = 'blue';
+
+const list = document.querySelectorAll('.special');\
+console.log(list);
