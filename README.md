@@ -90,3 +90,28 @@ last.setAttribute('class', 'first');
 last.textContent = 'i also have a class of first';
 
 const links = document.querySelectorAll('.first');
+
+### className & classList
+
+const first = document.getElementById('first');
+const second = document.getElementById('second');
+const third = document.getElementById('third');
+
+// check class name
+const classValue = first.className;
+console.log(classValue);
+
+// adding class
+second.className = 'colors';
+
+// adds classes without overriding
+third.classList.add('colors', 'text');
+third.classList.remove('text');
+
+// checks to see if we have class
+let result = third.classList.contains('colors');
+if(result){
+console.log("Yes we have colors class");
+} else {
+console.log('No we do not have colors class');
+}
