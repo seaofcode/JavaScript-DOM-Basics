@@ -70,3 +70,23 @@ console.log(second);
 
 const first = document.querySelector('.first');\
 first.nextElementSibling.style.color = 'red';
+
+// nodeValue\
+// textContent
+
+const item = document.getElementById('special');\
+const value = item.firstChild.nodeValue;
+
+const easyValue = item.textContent;
+
+### getAttribute & setAttribute
+
+const first = document.querySelector('.first');
+const classValue = first.getAttribute('class');
+
+const link = document.getElementById('link');
+const last = link.nextElementSibling;
+last.setAttribute('class', 'first');
+last.textContent = 'i also have a class of first';
+
+const links = document.querySelectorAll('.first');
