@@ -137,3 +137,18 @@ document.body.appendChild(bodyDiv);
 const heading2 = document.createElement('h2');
 heading2.innerHTML = '<h2>Heading 2</h2>';
 document.body.appendChild(heading2);
+
+### Events
+
+// select element
+// addEventListener()
+// what event, what to do
+
+// Click Event
+const btn = document.querySelector('.btn');
+const heading = document.querySelector('h2');
+
+btn.addEventListener('click', function(){
+console.log('clicked button');
+heading.classList.add('red');
+});
