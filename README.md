@@ -131,3 +131,9 @@ const text = document.createTextNode('a simple body div');
 // add text to bodyDiv, then add bodyDiv to body\
 bodyDiv.appendChild(text);\
 document.body.appendChild(bodyDiv);
+
+### innerHTML
+
+const heading2 = document.createElement('h2');
+heading2.innerHTML = '<h2>Heading 2</h2>';
+document.body.appendChild(heading2);
