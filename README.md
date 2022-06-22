@@ -134,21 +134,64 @@ document.body.appendChild(bodyDiv);
 
 ### innerHTML
 
-const heading2 = document.createElement('h2');
-heading2.innerHTML = '<h2>Heading 2</h2>';
+const heading2 = document.createElement('h2');\
+heading2.innerHTML = '<h2>Heading 2</h2>';\
 document.body.appendChild(heading2);
 
 ### Events
 
-// select element
-// addEventListener()
+// select element\
+// addEventListener()\
 // what event, what to do
 
-// Click Event
-const btn = document.querySelector('.btn');
+// Click Event\
+const btn = document.querySelector('.btn');\
 const heading = document.querySelector('h2');
 
-btn.addEventListener('click', function(){
-console.log('clicked button');
-heading.classList.add('red');
+btn.addEventListener('click', function(){\
+console.log('clicked button');\
+heading.classList.add('red');\
+});
+
+### Event Function Reference
+
+const btn = document.querySelector('.btn');\
+const heading = document.querySelector('h2');
+
+function changeColors(){\
+let hasClass = heading.classList.contains('red');\
+if(hasClass){\
+heading.classList.remove('red');\
+} else{\
+heading.classList.add('red');\
+}
+}
+
+btn.addEventListener('click', changeColors);
+
+// other Mouse Events\
+// click - fires after full action occurs\
+// mousedown - button is pressed\
+// mouseup - button is released\
+// mouseenter - moved onto an element\
+// mouseleave - moved out of an element
+
+const heading = document.querySelector('h1');\
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', function(){\
+ console.log('mouse click');\
+});
+btn.addEventListener('mousedown', function(){\
+ console.log('mouse down');\
+});
+btn.addEventListener('mouseup', function(){\
+ console.log('mouse up');\
+});
+
+heading.addEventListener('mouseenter', function(){\
+ heading.classList.add('changeColor');\
+});
+heading.addEventListener('mouseleave', function(){\
+ heading.classList.remove('changeColor');\
 });
