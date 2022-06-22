@@ -115,3 +115,19 @@ console.log("Yes we have colors class");
 } else {
 console.log('No we do not have colors class');
 }
+
+### createElement('element')
+
+### createTextNode('text content')
+
+### element.appendChild(childElement)
+
+// create empty element\
+const bodyDiv = document.createElement('div');
+
+// create text node\
+const text = document.createTextNode('a simple body div');
+
+// add text to bodyDiv, then add bodyDiv to body\
+bodyDiv.appendChild(text);\
+document.body.appendChild(bodyDiv);
